@@ -36,7 +36,7 @@ namespace QuanLyHocSinh
 
         private void BaoCaoPhanCong_Load(object sender, EventArgs e)
         {
-            //get can bo giao vien lap bao cao
+            //get can bo giao vien lap bao ca
             QuanLyGiaoVien qlGiaoVien = new QuanLyGiaoVien();
             GiaoVienDTO giaoVien = new GiaoVienDTO();
             giaoVien = qlGiaoVien.GetInfoTaiKhoan(taiKhoan);
