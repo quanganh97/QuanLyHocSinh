@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuanLyHocSinh_DataSet" targetNamespace="http://tempuri.org/QuanLyHocSinh_DataSet.xsd" xmlns:mstns="http://tempuri.org/QuanLyHocSinh_DataSet.xsd" xmlns="http://tempuri.org/QuanLyHocSinh_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyHocSinhConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyHocSinhConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyHocSinh.Properties.Settings.GlobalReference.Default.QuanLyHocSinhConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewPhanCongTableAdapter" GeneratorDataComponentClassName="ViewPhanCongTableAdapter" Name="ViewPhanCong" UserDataComponentName="ViewPhanCongTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyHocSinhConnectionString (Settings)" DbObjectName="QuanLyHocSinh.dbo.ViewPhanCong" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaLop, MaMon, MaCanBoGiaoVien, TenLop, TenMon, SoTiet, HoTen, NgayPhanCong FROM dbo.ViewPhanCong</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaLop" DataSetColumn="MaLop" />
+              <Mapping SourceColumn="MaMon" DataSetColumn="MaMon" />
+              <Mapping SourceColumn="MaCanBoGiaoVien" DataSetColumn="MaCanBoGiaoVien" />
+              <Mapping SourceColumn="TenLop" DataSetColumn="TenLop" />
+              <Mapping SourceColumn="TenMon" DataSetColumn="TenMon" />
+              <Mapping SourceColumn="SoTiet" DataSetColumn="SoTiet" />
+              <Mapping SourceColumn="HoTen" DataSetColumn="HoTen" />
+              <Mapping SourceColumn="NgayPhanCong" DataSetColumn="NgayPhanCong" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuanLyHocSinh_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="QuanLyHocSinh_DataSet" msprop:Generator_UserDSName="QuanLyHocSinh_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewPhanCong" msprop:Generator_TableClassName="ViewPhanCongDataTable" msprop:Generator_TableVarName="tableViewPhanCong" msprop:Generator_TablePropName="ViewPhanCong" msprop:Generator_RowDeletingName="ViewPhanCongRowDeleting" msprop:Generator_RowChangingName="ViewPhanCongRowChanging" msprop:Generator_RowEvHandlerName="ViewPhanCongRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewPhanCongRowDeleted" msprop:Generator_UserTableName="ViewPhanCong" msprop:Generator_RowChangedName="ViewPhanCongRowChanged" msprop:Generator_RowEvArgName="ViewPhanCongRowChangeEvent" msprop:Generator_RowClassName="ViewPhanCongRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaLop" msprop:Generator_ColumnVarNameInTable="columnMaLop" msprop:Generator_ColumnPropNameInRow="MaLop" msprop:Generator_ColumnPropNameInTable="MaLopColumn" msprop:Generator_UserColumnName="MaLop">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaMon" msprop:Generator_ColumnVarNameInTable="columnMaMon" msprop:Generator_ColumnPropNameInRow="MaMon" msprop:Generator_ColumnPropNameInTable="MaMonColumn" msprop:Generator_UserColumnName="MaMon">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaCanBoGiaoVien" msprop:Generator_ColumnVarNameInTable="columnMaCanBoGiaoVien" msprop:Generator_ColumnPropNameInRow="MaCanBoGiaoVien" msprop:Generator_ColumnPropNameInTable="MaCanBoGiaoVienColumn" msprop:Generator_UserColumnName="MaCanBoGiaoVien">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenLop" msprop:Generator_ColumnVarNameInTable="columnTenLop" msprop:Generator_ColumnPropNameInRow="TenLop" msprop:Generator_ColumnPropNameInTable="TenLopColumn" msprop:Generator_UserColumnName="TenLop" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenMon" msprop:Generator_ColumnVarNameInTable="columnTenMon" msprop:Generator_ColumnPropNameInRow="TenMon" msprop:Generator_ColumnPropNameInTable="TenMonColumn" msprop:Generator_UserColumnName="TenMon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoTiet" msprop:Generator_ColumnVarNameInTable="columnSoTiet" msprop:Generator_ColumnPropNameInRow="SoTiet" msprop:Generator_ColumnPropNameInTable="SoTietColumn" msprop:Generator_UserColumnName="SoTiet" type="xs:int" minOccurs="0" />
+              <xs:element name="HoTen" msprop:Generator_ColumnVarNameInTable="columnHoTen" msprop:Generator_ColumnPropNameInRow="HoTen" msprop:Generator_ColumnPropNameInTable="HoTenColumn" msprop:Generator_UserColumnName="HoTen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgayPhanCong" msprop:Generator_ColumnVarNameInTable="columnNgayPhanCong" msprop:Generator_ColumnPropNameInRow="NgayPhanCong" msprop:Generator_ColumnPropNameInTable="NgayPhanCongColumn" msprop:Generator_UserColumnName="NgayPhanCong" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewPhanCong" />
+      <xs:field xpath="mstns:MaLop" />
+      <xs:field xpath="mstns:MaMon" />
+      <xs:field xpath="mstns:MaCanBoGiaoVien" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
